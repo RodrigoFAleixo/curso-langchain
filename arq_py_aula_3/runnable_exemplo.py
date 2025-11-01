@@ -81,7 +81,7 @@ sequence = runnable_1 | {  # o dicionário aqui é entendido como 'RunnableParal
 #     mul_three=runnable_3,
 # )
 
-resposta = sequence.invoke(1)
+resposta = sequence.invoke(2)
 
 print("------ RESPOSTA DO INVOKE EXEMPLO 3 - RunnableParallel ----")
 print(resposta)
@@ -138,4 +138,3 @@ resposta = runnable.invoke({"num": 1})
 print("------ RESPOSTA DO INVOKE EXEMPLO 6 - Operador Assign -----------------------")
 print(resposta)
 print("-----------------------------------------------------------------------------")
-
