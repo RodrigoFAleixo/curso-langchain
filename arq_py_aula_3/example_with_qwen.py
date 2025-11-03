@@ -23,7 +23,7 @@ quant_config = _4bits()
 model = AutoModelForCausalLM.from_pretrained(
     MODEL_PATH,
     device_map="auto",
-    torch_dtype="auto",
+    dtype="auto",
     trust_remote_code=False,
     quantization_config=quant_config
 )
